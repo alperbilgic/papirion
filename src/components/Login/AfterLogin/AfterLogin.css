@@ -1,0 +1,187 @@
+.signed-in-block-afterlogin {
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin-right: 2vw;
+}
+
+.w-dropdown-afterlogin {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 900;
+}
+
+.dropdown-toggle-afterlogin {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+}
+
+.w-dropdown-toggle-afterlogin {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: #222222;
+    top: 25%; 
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.image-afterlogin {
+    position: relative;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    left: 0;
+    width: 5vh;
+}
+
+.text-block-afterlogin {
+    position: relative;
+    font-family: Raleway, sans-serif;
+    color: #c4c4c4;
+    font-size: 13.5px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    margin-top: 1vh;
+}
+
+.dropdown-list-afterlogin {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 23px;
+    margin-right: auto;
+    margin-left: auto;
+    right: -5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px 0 rgba(46, 53, 77, 0.14), 0 2px 4px 0 rgba(46, 53, 77, 0.14), 0 1px 2px 0 rgba(46, 53, 77, 0.14);
+}
+  
+.dropdown-list-2-afterlogin.w--open {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: #dfdfee;
+}
+
+.w-dropdown-list-afterlogin {
+    position: absolute;
+    background: #dddddd;
+    min-width: 100%;
+}
+.w-dropdown-list-afterlogin.w--open {
+    display: block;
+}
+
+.dropdown-linkbox-afterlogin {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.profile-dropdown__link-afterlogin {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+
+.w-dropdown-link-afterlogin {
+    position: relative;
+    vertical-align: top;
+    text-decoration: none;
+    color: #222222;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    padding: 10px 20px;
+    display: block;
+    color: #222222;
+}
+
+.line-decorator-afterlogin {
+    width: auto;
+    height: 1px;
+    margin-top: 0%;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #c7c2c2;
+}
+  
+.line-decorator-afterlogin.indropdown {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+}

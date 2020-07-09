@@ -1,0 +1,15 @@
+.signin-block {
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: 3.6vh;
+}
+
+.person-image {
+    width: 65%;
+    height: 100%;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    cursor: pointer;
+}

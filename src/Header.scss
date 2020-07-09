@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "dark": #000000,
+  "primary": #f3f3f3,
+);
+
+// $input-border-radius: .75rem;
+// $input-placeholder-color: #d1caca;
+// $input-font-family: Oswald;
+// $input-font-size: 1.25rem;
+// $input-btn-font-size: 1.25rem;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
