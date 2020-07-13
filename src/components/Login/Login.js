@@ -86,14 +86,14 @@ class Login extends Component {
                         <form id="email-form" name="email-form" data-name="Email Form" className="signin-form">
                             <div className="signin__first-part">
                                 <label for="name-3" className="text-inside-signin">Kullanıcı Adı / E-mail</label>
-                                <input type="text" value={this.state.credentials.email} onChange={this.inputChanged} className="signin-inputs w-input" maxlength="256" name="email" data-name="Name 3" placeholder="" id="name-3"/>
+                                <input type="text" value={this.state.credentials.email} onChange={this.inputChanged} onKeyPress={this.pressedEnter} className="signin-inputs w-input" maxlength="256" name="email" data-name="Name 3" placeholder="" id="name-3"/>
                             </div>
                             <div className="signin__second-part">
                                 <div className="signin__second-part__texts">
                                     <label for="email-3" className="text-inside-signin">Şifre</label>
                                     <a href="sifreyenileme" className="text-inside-signin password-forget">Şifremi Unuttum</a>
                                 </div>
-                                <input type="password" value={this.state.credentials.password} onChange={this.inputChanged} className="signin-inputs w-input" maxlength="256" name="password" data-name="Email 3" placeholder="" id="email-3" required=""/>
+                                <input type="password" value={this.state.credentials.password} onChange={this.inputChanged} onKeyPress={this.pressedEnter} className="signin-inputs w-input" maxlength="256" name="password" data-name="Email 3" placeholder="" id="email-3" required=""/>
                             </div>
                             <div className="signin__buttons w-clearfix">
                                 <Button onClick={this.login} className='create-account-button'>Hesap Oluştur</Button>{' '}
