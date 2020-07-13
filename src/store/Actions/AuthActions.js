@@ -2,6 +2,7 @@
 import axios from 'axios';
 
 import * as actionTypes from  './ActionTypes';
+import * as utility from '../utility';
 
 
 // export function setCurrentUser(user, token) {
@@ -91,14 +92,13 @@ export const auth = (authData) => {
         // }
         axios.post(url, authData, {headers: headers})
             .then(response => {
-                console.log('response');
-                console.log(response);
                 // const expirationDate = new Date(new Date().getTime() + response.data.expiresIn * 1000);
                 localStorage.setItem('userToken', response.data.token);
                 // localStorage.setItem('expirationDate', expirationDate);
                 localStorage.setItem('user', response.data.user);
                 dispatch(authSuccess(response.data.token, response.data.user));
                 // dispatch(checkAuthTimeout(response.data.expiresIn));
+                utility.setAuthorizationToken(response.data.token);
             })
             .catch(err => {
                 dispatch(authFail(err));

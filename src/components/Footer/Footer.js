@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-section">
             <div className="line-decorator footer-line-decorator"></div>
             <div className="footer-container w-container">
-            <div className="footer-links-div"><Link to="#" className="footer-links">Hakkımızda</Link><Link to="#" className="footer-links">Yardım</Link><Link to="#" className="footer-links">İletişim</Link><Link to="#" className="footer-links">Kullanım Şartları</Link></div>
+            <div className="footer-links-div"><Link to="/hakkımızda/" className="footer-links">Hakkımızda</Link><Link to="/yardım/" className="footer-links">Yardım</Link><Link to="/iletişim/" className="footer-links">İletişim</Link><Link to="/kullanimsartlari/" className="footer-links">Kullanım Şartları</Link></div>
             </div>
             <div className="footer-social-main">
                 <div className="footer-social facebook"><img src={FaceBook} width="20" alt="" className="image-social-logo"/></div>

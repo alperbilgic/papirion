@@ -21,6 +21,7 @@ const Review = (props) => {
     }, [_isMounted, props.booklist.description]);
 
     const link = '/booklists/' + props.booklist.id;
+    const userLink = '/users/' + props.booklist.user.username;
 
     return (
         <div className="slider__slide-booklist list-slide-booklist w-slide-booklist">
@@ -31,13 +32,13 @@ const Review = (props) => {
                 </div>
                 <div className="list-content-booklist">
                     <div className="list-name-booklist">
-                        <Link to="#" style={{textDecoration: 'none'}} className="link-4-booklist">{props.booklist.description}</Link>
+                        <Link to={link} style={{textDecoration: 'none'}} className="link-4-booklist">{script}</Link>
                     </div>
                     <div className="list-content-detail-booklist">
                         <div className="username-avatar-booklist">
                             <img src={props.booklist.user.image} width="25" alt="" className="image-11-booklist"/>
                         </div>
-                        <Link href="#" style={{textDecoration: 'none'}} className="link-2-booklist">{props.booklist.user.username}</Link>
+                        <Link to={userLink} style={{textDecoration: 'none'}} className="link-2-booklist">{props.booklist.user.username}</Link>
                         <div className="list-likes-booklist">
                             <img src={LikeImg} width="39" alt="" className="image-12-booklist"/>
                         </div>
