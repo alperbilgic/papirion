@@ -3,11 +3,13 @@ import Router from './Router';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { authCheckState } from './store/Actions/AuthActions'
 
 class App extends Component {
 
-  state = {
-    books: [],
+  componentDidMount () {
+    this.props.onTryAutoSignup();
   }
 
   render() {
@@ -21,4 +23,11 @@ class App extends Component {
           </BrowserRouter>
   );}
 }
-export default App;
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onTryAutoSignup: () => dispatch( authCheckState() )
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);
