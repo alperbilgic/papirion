@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../../store/Actions/Index';
 import './AfterLogin.css';
 import PersonImg from '../../../assets/images/person.png';
 
@@ -24,7 +26,7 @@ const AfterLogin = (props) => {
                             <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Okuma Listem</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Favorilerim</a></div>
                             <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ağım</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Hesabım</a></div>
                             <div className="line-decorator-afterlogin indropdown-afterlogin"></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ayarlar</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Çıkış Yap</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ayarlar</a><a href="/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin" onClick={props.logout}>Çıkış Yap</a></div>
                         </div>
             }
             
@@ -33,4 +35,10 @@ const AfterLogin = (props) => {
     )
 }
 
-export default AfterLogin;
+const mapDispatchToProps = (dispatch) => {
+  return {
+      logout: ( data ) => dispatch( actions.logout() ),
+  };
+}
+
+export default connect(null, mapDispatchToProps)(AfterLogin);

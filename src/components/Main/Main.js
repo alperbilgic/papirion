@@ -32,7 +32,6 @@ class Main extends Component {
             return Promise.all([res1.json(), res2.json(), res3.json(), res4.json()]) 
          }).then(([res1, res2, res3, res4]) => {
             if(this._isMounted) {
-                console.log(res4.results.length)
                 this.setState({books: res1.results.slice(0, 12)});
                 this.setState({booklists: res2.results.slice(0, 6)});
                 this.setState({authors: res3.results.slice(0, 12)});

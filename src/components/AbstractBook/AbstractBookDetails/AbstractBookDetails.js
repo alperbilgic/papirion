@@ -41,7 +41,7 @@ class BookDetails extends Component {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': `Token ${this.state.token}`
+            //   'Authorization': `Token ${this.state.token}`
             },
             body: JSON.stringify(send_review), 
           }).then( resp => resp.json())

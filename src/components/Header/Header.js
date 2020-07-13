@@ -14,11 +14,12 @@ const Header = (props) => {
     
     useEffect(() => {
         console.log('token' + props.token)
-        if (props.token == '') {
+        if (props.token == '' || props.token == null) {
             console.log('set to true');
-            setIsLoggedIn(true);
-        } else {
             setIsLoggedIn(false);
+        } else {
+            console.log(props.token);
+            setIsLoggedIn(true);
         }
             
     }, [props.token]);

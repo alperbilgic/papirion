@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import './Login.css';
 import LoginStyles from './LoginStyles';
 import PersonImg from '../../assets/images/person.png';
-import { ModalHeader, ModalBody, Label, Input, ModalFooter,
-         Button, Modal } from 'reactstrap';
+import { ModalBody, Button, Modal } from 'reactstrap';
+import * as actions from '../../store/Actions/Index';
 
 
 class Login extends Component {
@@ -35,20 +35,11 @@ class Login extends Component {
     }
 
     login = event => {
-        fetch(`${process.env.REACT_APP_API_URL}/accounts/login/`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(this.state.credentials), 
-              }).then( resp => resp.json())
-              .then( res => {
-                    console.log(res.token);
-                    this.props.tokenNotifier(res.token);
-                    this.toggle();
-                    console.log(this.props.token)
-              })
-              .catch( error => console.log(error));
+        // actions içindeki login fonksiyonuna ek olarak:
+        this.props.login(JSON.stringify(this.state.credentials));
+        // .then( res => {
+        //     this.toggle();
+        // })
     }
 
     render () {
@@ -121,14 +112,14 @@ Login = React.memo(Login);
 
 const mapStateToProps = state => {
     return {
-        token: state.userToken
+        token: state.userToken,
+        user: state.user,
     };
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        tokenNotifier: (token) => dispatch({type: 'SAVE_TOKEN', value: token}),
-        setUsername: (username) => dispatch({type: 'SAVE_USERNAME', value: username}),
+        login: ( data ) => dispatch( actions.auth( data ) ),
     };
 }
 
