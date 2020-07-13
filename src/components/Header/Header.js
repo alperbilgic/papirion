@@ -10,15 +10,11 @@ import AfterLogin from '../Login/AfterLogin/AfterLogin';
 const Header = (props) => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    console.log(props.token);
     
     useEffect(() => {
-        console.log('token' + props.token)
-        if (props.token == '' || props.token == null) {
-            console.log('set to true');
+        if (props.token === '' || props.token === null) {
             setIsLoggedIn(false);
         } else {
-            console.log(props.token);
             setIsLoggedIn(true);
         }
             

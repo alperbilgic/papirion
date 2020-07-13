@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React/*, { Suspense }*/ from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Main from './components/Main/Main';
 import AbstractBooks from './components/AbstractBook/AbstractBooks/AbstractBooks';

@@ -21,12 +21,12 @@ const AfterLogin = (props) => {
               <div className="text-block-afterlogin">{props.username}</div>
             </div>
             {isOpen && <div className="dropdown-list-afterlogin">
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ana Sayfam</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Kitaplarım</a></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Yorumlarım</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Listelerim</a></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Okuma Listem</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Favorilerim</a></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ağım</a><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Hesabım</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/anasayfam/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ana Sayfam</a><a href="/kitaplarim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Kitaplarım</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/yorumlarım" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Yorumlarım</a><a href="/listelerim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Listelerim</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/okumalistem/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Okuma Listem</a><a href="/favorilerim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Favorilerim</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/agim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ağım</a><a href="/hesabim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Hesabım</a></div>
                             <div className="line-decorator-afterlogin indropdown-afterlogin"></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="#" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ayarlar</a><a href="/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin" onClick={props.logout}>Çıkış Yap</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/ayarlar/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ayarlar</a><a href="/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin" onClick={props.logout}>Çıkış Yap</a></div>
                         </div>
             }
             

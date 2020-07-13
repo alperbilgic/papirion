@@ -43,10 +43,10 @@ class Login extends Component {
     }
 
     render () {
-        const modalTimeout = {
-            enter: 10,
-            exit: 10,
-        }
+        // const modalTimeout = {
+        //     enter: 10,
+        //     exit: 10,
+        // }
 
         return (
             <div className="signin-block">
@@ -91,7 +91,7 @@ class Login extends Component {
                             <div className="signin__second-part">
                                 <div className="signin__second-part__texts">
                                     <label for="email-3" className="text-inside-signin">Şifre</label>
-                                    <a href="#" className="text-inside-signin password-forget">Şifremi Unuttum</a>
+                                    <a href="sifreyenileme" className="text-inside-signin password-forget">Şifremi Unuttum</a>
                                 </div>
                                 <input type="password" value={this.state.credentials.password} onChange={this.inputChanged} className="signin-inputs w-input" maxlength="256" name="password" data-name="Email 3" placeholder="" id="email-3" required=""/>
                             </div>

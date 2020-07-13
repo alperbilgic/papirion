@@ -33,11 +33,9 @@ class Slider extends Component {
     return (
       <div className='page'>
         <div className="custom-slider w-slider" style={{height: this.props.height}}>
-          <Carousel className='slider__mask w-slider-mask' breakPoints={this.state.breakPoints} transitionMs='750' disableArrowsOnEnd={false} 
+          <Carousel className='slider__mask w-slider-mask' breakPoints={this.state.breakPoints} transitionMs={750} disableArrowsOnEnd={false} 
                     pagination={false} renderArrow={this.myArrow} >
-            {
-              this.props.children
-            }
+            {this.props.children}
           </Carousel>
         </div>
       </div>
