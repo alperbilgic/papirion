@@ -31,7 +31,7 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className='page'>
+      <div className='page-slider'>
         <div className="custom-slider w-slider" style={{height: this.props.height}}>
           <Carousel className='slider__mask w-slider-mask' breakPoints={this.state.breakPoints} transitionMs={750} disableArrowsOnEnd={false} 
                     pagination={false} renderArrow={this.myArrow} >

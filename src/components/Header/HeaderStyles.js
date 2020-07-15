@@ -28,7 +28,7 @@ function HeaderStyles() {
         left: 0;
         right: 0;
         text-align: center;
-        max-width: 940px;
+        width: 64rem;
     }
     
     .w-container-header:before,
