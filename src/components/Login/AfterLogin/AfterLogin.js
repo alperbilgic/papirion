@@ -10,6 +10,14 @@ const AfterLogin = (props) => {
     const [wrapperClosed, setWrapperClosed] = useState(false);
     const wrapperRef = useRef(null);
 
+    const links = {
+      'okumalistem': "/users/" + props.username + "/okumalistem",
+      'favorilerim': "/users/" + props.username + "/favorilerim",
+      'kitaplarim': "/users/" + props.username + "/kitaplarim",
+      'listelerim': "/users/" + props.username + "/listelerim",
+      'yorumlarim': "/users/" + props.username + "/yorumlarim",
+    }
+
     const toggle = () => {
       if (!wrapperClosed) {
         setIsOpen(!isOpen);
@@ -42,13 +50,14 @@ const AfterLogin = (props) => {
     return (
         <div className="signed-in-block-afterlogin" onKeyPress={ESCToggle}>
           <div data-hover="" data-delay="0" className="w-dropdown-afterlogin">
-            <div className="dropdown-toggle-afterlogin w-dropdown-toggle-afterlogin" onClick={toggle}><img src={PersonImg} width="27" alt="" className="image-afterlogin"/>
+            <div className="dropdown-toggle-afterlogin w-dropdown-toggle-afterlogin" onClick={toggle}>
+              <img src={PersonImg} width="27" alt="" className="image-afterlogin"/>
               <div className="text-block-afterlogin">{props.username}</div>
             </div>
             {isOpen && <div className="dropdown-list-afterlogin" ref={wrapperRef}>
-                            <div className="dropdown-linkbox-afterlogin"><a href="/anasayfam/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ana Sayfam</a><a href="/kitaplarim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Kitaplarım</a></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="/yorumlarım" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Yorumlarım</a><a href="/listelerim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Listelerim</a></div>
-                            <div className="dropdown-linkbox-afterlogin"><a href="/okumalistem/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Okuma Listem</a><a href="/favorilerim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Favorilerim</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href="/anasayfam/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ana Sayfam</a><a href={links['kitaplarim']} className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Kitaplarım</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href={links['yorumlarim']} className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Yorumlarım</a><a href={links['listelerim']} className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Listelerim</a></div>
+                            <div className="dropdown-linkbox-afterlogin"><a href={links['okumalistem']} className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Okuma Listem</a><a href={links['favorilerim']} className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Favorilerim</a></div>
                             <div className="dropdown-linkbox-afterlogin"><a href="/agim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ağım</a><a href="/hesabim/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Hesabım</a></div>
                             <div className="line-decorator-afterlogin indropdown-afterlogin"></div>
                             <div className="dropdown-linkbox-afterlogin"><a href="/ayarlar/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin">Ayarlar</a><a href="/" className="profile-dropdown__link-afterlogin w-dropdown-link-afterlogin" onClick={props.logout}>Çıkış Yap</a></div>
@@ -66,4 +75,10 @@ const mapDispatchToProps = (dispatch) => {
   };
 }
 
-export default connect(null, mapDispatchToProps)(AfterLogin);
+const mapStateToProps = state => {
+  return {
+      username: state.username
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AfterLogin);

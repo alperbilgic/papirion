@@ -1,6 +1,6 @@
 import React from 'react';
 import EmptyAuthorPic from '../../../assets/images/profile-picture.png';
-import './Author.css';
+import './Author-slider.css';
 
 const Author = (props) => {
 

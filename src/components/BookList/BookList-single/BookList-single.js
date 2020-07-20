@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 // import PropTypes from 'prop-types';
-import './BookList.css';
+import './BookList-slider.css';
 import { Link } from 'react-router-dom';
 import LikeImg from '../../../assets/images/like-example.jpg';
 import BookListImg from '../../../assets/images/booklist-example.JPG';
 
-const Review = (props) => {
+const BookList = (props) => {
     const [script, setScript] = useState('');
     const [_isMounted, setIsMounted] = useState(false);
     
@@ -50,4 +50,4 @@ const Review = (props) => {
     )
 }
 
-export default Review;
+export default BookList;

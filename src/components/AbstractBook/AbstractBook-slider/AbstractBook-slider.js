@@ -1,6 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import './AbstractBook.css';
+import './AbstractBook-slider.css';
 import { Link } from 'react-router-dom';
 
 const AbstractBook = (props) => {
