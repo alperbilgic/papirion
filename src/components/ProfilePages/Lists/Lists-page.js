@@ -3,14 +3,15 @@ import BookList from '../../BookList/BookList-slider/BookList-slider';
 import { connect } from 'react-redux';
 import CardContainer from '../../../containers/CardContainer/CardContainer';
 
-class MyLists extends Component {
+class Lists extends Component {
 
     state = {
         lists: [],
+        pageuser: this.props.match.params.username,
     }
 
     componentDidUpdate(prevProps) {
-        fetch(`${process.env.REACT_APP_API_URL}/api/users/${this.props.username}/mylists`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/users/${this.state.pageuser}/mylists`, {
         method: 'GET',
         }).then( resp => resp.json())
         .then( res => {
@@ -36,4 +37,4 @@ const mapStateToProps = state => {
     };
 }
 
-export default connect(mapStateToProps, null)(MyLists);
+export default connect(mapStateToProps, null)(Lists);
