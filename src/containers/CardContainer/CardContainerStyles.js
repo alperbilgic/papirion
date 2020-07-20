@@ -11,6 +11,7 @@ function HeaderStyles() {
     .cardContainer-inner-wrapper {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
     }
     `}</style>;
 }
