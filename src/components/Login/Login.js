@@ -86,7 +86,7 @@ class Login extends Component {
                         <form id="email-form" name="email-form" data-name="Email Form" className="signin-form">
                             <div className="signin__first-part">
                                 <label for="name-3" className="text-inside-signin">Kullanıcı Adı / E-mail</label>
-                                <input type="text" value={this.state.credentials.email} onChange={this.inputChanged} onKeyPress={this.pressedEnter} className="signin-inputs w-input" maxlength="256" name="email" data-name="Name 3" placeholder="" id="name-3"/>
+                                <input type="text" value={this.state.credentials.email} onChange={this.inputChanged} onKeyPress={this.pressedEnter} className="signin-inputs w-input" maxLength="256" name="email" data-name="Name 3" placeholder="" id="name-3"/>
                             </div>
                             <div className="signin__second-part">
                                 <div className="signin__second-part__texts">
@@ -113,7 +113,7 @@ Login = React.memo(Login);
 const mapStateToProps = state => {
     return {
         token: state.userToken,
-        user: state.user,
+        username: state.username,
     };
 }
 

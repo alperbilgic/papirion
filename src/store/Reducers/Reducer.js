@@ -38,7 +38,8 @@ import { updateObject } from '../utility';
 
 const initialState = {
     userToken: null,
-    user: null,
+    username: null,
+    userId: null,
     error: null,
     loading: false,
     authRedirectPath: '/'
@@ -51,7 +52,8 @@ const authStart = ( state, action ) => {
 const authSuccess = (state, action) => {
     return updateObject( state, { 
         userToken: action.userToken,
-        user: action.user,
+        username: action.username,
+        userId: action.userId,
         error: null,
         loading: false
      } );
@@ -65,7 +67,7 @@ const authFail = (state, action) => {
 };
 
 const authLogout = (state, action) => {
-    return updateObject(state, { userToken: null, user: null });
+    return updateObject(state, { userToken: null, username: null, userId: null });
 };
 
 // const setAuthRedirectPath = (state, action) => {

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import TextSection from './MainSections/TextSection/TextSection';
-import AbstractBook from '../AbstractBook/AbstractBook/AbstractBook';
-import Author from '../Author/Author/Author';
-import Review from '../Review/Review/Review';
-import BookList from '../BookList/BookList/BookList';
+import AbstractBook from '../AbstractBook/AbstractBook-slider/AbstractBook-slider';
+import Author from '../Author/Author-slider/Author-slider';
+import Review from '../Review/Review-slider/Review-slider';
+import BookList from '../BookList/BookList-slider/BookList-slider';
 import { Jumbotron, Row, Col, Container } from 'reactstrap';
 import Slider from '../Slider/Slider';
 import ReviewSlider from '../Slider/ReviewSlider/ReviewSlider';

@@ -10,6 +10,8 @@ import AfterLogin from '../Login/AfterLogin/AfterLogin';
 const Header = (props) => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    console.log(props.token);
+    console.log(props.username);
     
     useEffect(() => {
         if (props.token === '' || props.token === null) {
@@ -31,7 +33,7 @@ const Header = (props) => {
                                 <NavLink link="/abstractbooks/">Kitaplar</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink link="/authors/">Yazarlar{props.username}</NavLink>
+                                <NavLink link="/authors/">Yazarlar</NavLink>
                             </NavItem>
                             <DropDown text='GÖZ AT'/>
                         </div>
@@ -45,7 +47,8 @@ const Header = (props) => {
 
 const mapStateToProps = state => {
     return {
-        token: state.userToken
+        token: state.userToken,
+        username: state.username,
     };
 }
 

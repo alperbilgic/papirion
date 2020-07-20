@@ -1,0 +1,133 @@
+.review-slide {
+    width: 30vw;
+    min-width: 350px;
+    height: 210px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(46, 53, 77, 0.14), 0 2px 4px 0 rgba(46, 53, 77, 0.14), 0 1px 2px 0 rgba(46, 53, 77, 0.14);
+}
+
+.review-slider-divider {
+    justify-items: stretch;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+  .review-slider-divider.slider-div-list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+.review-slider-divider {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: minmax(0px, 0.4fr) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 0.4fr) minmax(0px, 1fr);
+    -ms-grid-rows: minmax(0px, 1fr) minmax(0px, 0.75fr);
+    grid-template-rows: minmax(0px, 1fr) minmax(0px, 0.75fr);
+    line-height: 20px;
+  }
+  
+  .review-slider-divider.slider-div-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .book-image-container {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .review-heading {
+    margin-top: 10px;
+  }
+  
+  .review-heading__bookname {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .line-decorator {
+    width: auto;
+    height: 1px;
+    margin-top: 0%;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #c7c2c2;
+  }
+  
+  .line-decorator.sub {
+    margin-top: 3.8%;
+    margin-right: 39px;
+    margin-left: 0px;
+    background-color: #c9c9c9;
+    color: #aaa2a2;
+  }
+
+  .review-heading-username {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 11px;
+    margin-left: 0px;
+  }
+
+  .review-heading-rating {
+    padding-bottom: 10px;
+  }
+
+  .username-avatar {
+    overflow: visible;
+    width: 40px;
+    height: 40px;
+  }
+
+  .review-text {
+    margin-top: 0px;
+    padding: 10px 14px;
+  }
+
+  .image-9 {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 5px;
+  }
