@@ -21,8 +21,8 @@ const Review = (props) => {
     const link = '/reviews/' + props.review.id;
 
     return (
-        <div id={`review-${props.review.id}`} className='review-slide w-slide'>
-                <div className='review-slider-divider'>
+        <div id={`review-${props.review.id}`} className='review-single'>
+                <div className='review-single-divider'>
                 <div className="book-image-container">
                     <img src={props.review.abstract_book.pop_child_book.image} width="78" alt="" className="image-9"/>
                 </div>
