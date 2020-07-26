@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import PropTypes from 'prop-types';
-import './BookList-slider.css';
+import './BookList-single.css';
 import { Link } from 'react-router-dom';
 import LikeImg from '../../../assets/images/like-example.jpg';
 import BookListImg from '../../../assets/images/booklist-example.JPG';
@@ -24,29 +24,23 @@ const BookList = (props) => {
     const userLink = '/users/' + props.booklist.user.username;
 
     return (
-        <div className="slider__slide-booklist list-slide-booklist w-slide-booklist">
-          <div className="slider-div-booklist slider-div-booklist-list">
-            <div className="list-container-booklist">
-                <div className="list-image-container-booklist">
-                    <img src={BookListImg} alt="sth" className="list-image-booklist"/>
+        <div className="mybooklist-main">
+            <div className="mybooklist-container">
+                <div className = "mybooklist-img">
+                    <div className = "mybooklist-img__src"><img src={BookListImg}/></div>
                 </div>
-                <div className="list-content-booklist">
-                    <div className="list-name-booklist">
-                        <Link to={link} style={{textDecoration: 'none'}} className="link-4-booklist">{script}</Link>
+                <div className = "mybooklist-text-flex">
+                    <div className = "mybooklist-listname primary-h"> En iyi {props.booklist.name}</div>
+                    <div className = "mybooklist-metadata tiny-text">
+                        <div className = "mybooklist-metadata__films"> 11 kitap </div>
+                        <div className = "mybooklist-metadata__likes"> 43</div>
+                        <div className = "mybooklist-metadata__comments"> 6</div>
                     </div>
-                    <div className="list-content-detail-booklist">
-                        <div className="username-avatar-booklist">
-                            <img src={props.booklist.user.image} width="25" alt="" className="image-11-booklist"/>
-                        </div>
-                        <Link to={userLink} style={{textDecoration: 'none'}} className="link-2-booklist">{props.booklist.user.username}</Link>
-                        <div className="list-likes-booklist">
-                            <img src={LikeImg} width="39" alt="" className="image-12-booklist"/>
-                        </div>
-                    </div>
+                    <div className = "mybooklist-description primary-p"><p>Kadın erkek ilişkilerinde {script} </p></div>
                 </div>
-            </div>
-          </div>
+            </div>        
         </div>
+        //<div className = line-decorator></div>
     )
 }
 

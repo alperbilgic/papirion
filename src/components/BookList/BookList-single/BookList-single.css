@@ -1,154 +1,47 @@
-.slider__slide-booklist {
-    overflow: hidden;
-    width: 180px;
-    height: 210px;
-    margin: 5px 2vh 10px 0px;
-    padding: 0px;
-    border-radius: 4px;
+*{
     background-color: #f3f3f3;
-    box-shadow: 0 4px 8px 0 rgba(46, 53, 77, 0.14), 0 2px 4px 0 rgba(46, 53, 77, 0.14), 0 1px 2px 0 rgba(46, 53, 77, 0.14);
+}
+.mybooklist-main{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.slider__slide-booklist.list-slide {
-    width: 180px;
-    height: 210px;
-    margin-right: 2vh;
-}
-
-.w-slide-booklist {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    white-space: normal;
-    text-align: left;
-}
-
-.slider-div-booklist {
-    display: -ms-grid;
+.mybooklist-container{
     display: grid;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: minmax(0px, 0.4fr) minmax(0px, 1fr);
-    grid-template-columns: minmax(0px, 0.4fr) minmax(0px, 1fr);
-    -ms-grid-rows: minmax(0px, 1fr) minmax(0px, 0.75fr);
-    grid-template-rows: minmax(0px, 1fr) minmax(0px, 0.75fr);
-    line-height: 20px;
-}
-  
-  .slider-div-booklist.slider-div-booklist-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
+    grid-template-columns: 30% 70%;
+    justify-content: start;
+    align-content: start;
+    width: 500px;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-  
-.list-container-booklist {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 100%;
+    grid-gap: 20px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(46, 53, 77, 0.14), 0 2px 4px 0 rgba(46, 53, 77, 0.14), 0 1px 2px 0 rgba(46, 53, 77, 0.14);
+    margin-right: 15px;
+    padding: 20px 10px;
 }
 
-.list-content-booklist {
-    position: absolute;
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-}
-  
- .list-name-booklist {
-    position: absolute;
-    top: -65px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-right: 7px;
-    padding-left: 7px;
-}
-  
- .link-4-booklist {
-    display: inline-block;
-    margin-top: 22px;
-    padding-bottom: 7px;
-    font-family: Roboto, sans-serif;
-    color: #2b2b2b;
-    font-weight: 500;
-    text-decoration: none;
-}
-  
- .list-content-detail-booklist {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 10px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: baseline;
-    -webkit-align-items: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-}
-  
- .list-likes-booklist {
-    margin-left: 10px;
-}
-  
- .image-12-booklist {
-    margin-left: 0px;
-    opacity: 0.78;
+.mybooklist-img{
+
 }
 
-.list-image-container-booklist {
-    width: 100%;
-    height: 50%;
-    margin: 5%;
-    padding-right: 10%;
+.mybooklist-text-flex{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
-  
- .list-image-booklist {
+
+.mybooklist-metadata{
+    display: flex;
+}
+
+.mybooklist-metadata > div{
+    margin-right: 10px;
     margin-top: 5px;
-    padding-top: 0px;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 5px;
+    
 }
 
-.image-11-booklist {
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.48;
+.mybooklist-metadata > div:nth-child(3){
+    margin-right: 0px;
 }
-
-.link-2-booklist {
-    margin-top: 8px;
-    margin-left: 0px;
-    font-family: Raleway, sans-serif;
-    color: #757575;
-    font-size: 1.8vh;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.username-avatar-booklist {
-    overflow: visible;
-    width: 40px;
-    height: 40px;
-}  
