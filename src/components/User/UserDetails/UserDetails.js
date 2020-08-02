@@ -10,6 +10,7 @@ const User = (props) => {
 
     return (
         <div className='user-detail-main'>
+            
             <div className= 'profile-header'> 
                 <div className= 'profile-image'> 
                     <Link to='/' style={{textDecoration: 'none', color: 'black'}}>
@@ -26,10 +27,20 @@ const User = (props) => {
                 </div>
                 <div className='stats-and-button'>
                     <div className='user-stats'><UserStats/></div>
-                    <div><button className='primary-btn'> Takip Et </button></div>
+                    <div className='btn-wrapper'><button className='primary-btn'> Takip Et </button></div>
                 </div>
             </div>
-            <div className= ''> </div>
+            
+            <div className='fields-bar'>
+                <div className='secondary-h'>Ana Sayfa</div>
+                <div className='secondary-h'>Activity</div>
+                <div className='secondary-h'>Kitaplar</div>
+                <div className='secondary-h'>Yorumlar</div>
+                <div className='secondary-h'>Okuma Listesi</div>
+                <div className='secondary-h'>Listeler</div>
+                <div className='secondary-h'>Favoriler</div>
+                <div className='secondary-h'>Ağ</div>
+            </div>
         </div>
     )
 }

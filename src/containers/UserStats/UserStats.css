@@ -4,6 +4,7 @@ ul > li {
 
 .stats{
     display:flex;
+    
 }
 
 .book-count{
@@ -19,4 +20,5 @@ ul > li > li:nth-child(1){
 
 ul > li > li:nth-child(2){
     font-size: 12px;
+    letter-spacing: 0.5px;
 }
