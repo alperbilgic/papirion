@@ -33,11 +33,12 @@ code {
 }
 
 .secondary-h{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   font-family: Raleway, sans;
   letter-spacing: 0.5px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .tiny-text{
@@ -96,3 +97,12 @@ box-shadow: 0 4px 8px 0 rgba(46, 53, 77, 0.14),
             0 2px 4px 0 rgba(46, 53, 77, 0.14), 
             0 1px 2px 0 rgba(46, 53, 77, 0.14);
 */
+
+/* Possible colors;
+  #A500FF ana lila
+  #19FF89 yeşil
+  #0CE8B5 mavi-yeşil
+  #FFB019
+  #7A12B3 koyu lila
+*/
+

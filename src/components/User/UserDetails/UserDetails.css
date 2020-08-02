@@ -56,13 +56,20 @@ ul {
     background-color: ;
     margin-top: 50px;
     justify-content: center;
+    ;
 }
 
 .fields-bar> div{
-    padding: 10px 10px;
+    padding: 10px 12px;
     background-color: transparent;
 }
 .fields-bar > div:not(:first-child){
+    
     border-right: solid;
     border-image: linear-gradient(transparent 10%, #cacaca 10% 90%, transparent 90%) 0 0 0 1 / 1.1px;
+}
+
+.fields-bar> div:active{
+    background-color: #0CE8B5;
+    color: white;
 }
