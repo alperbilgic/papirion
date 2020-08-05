@@ -5,6 +5,7 @@ import Authors from './components/Author/Author-page/Author-page';
 import AbstractBooks from './components/AbstractBook/AbstractBook-page/AbstractBook-page';
 import AbstractBookDetails from './components/AbstractBook/AbstractBookDetails/AbstractBookDetails';
 import Users from './components/User/Users-page/Users-page';
+import Reviews from './components/Review/Review-single/Review-single';
 import UserDetails from './components/User/UserDetails/UserDetails';
 import MyReadListPage from './components/ProfilePages/MyReadList/MyReadLists-page';
 import MyFavoritesListPage from './components/ProfilePages/MyFavorites/MyFavorites-page';
@@ -21,6 +22,7 @@ function Routes() {
             <Route exact path="/abstractbooks/" component={AbstractBooks}/>           
             <Route exact path="/abstractbooks/:bookId" component={AbstractBookDetails}/>
             <Route exact path="/users/" component={Users}/>
+            <Route exact path="/reviews/" component={Reviews}/>
             <Route exact path="/users/:username" component={UserDetails}/>
             <Route exact path="/users/:username/okumalistem" component={MyReadListPage}/>
             <Route exact path="/users/:username/favorilerim" component={MyFavoritesListPage}/>

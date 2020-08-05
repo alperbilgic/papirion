@@ -1,0 +1,32 @@
+.search-input-box{
+    visibility: visible;
+    width: 200px;
+    height: 30px;
+    border: 0.5px solid #bdbdbd;
+    border-radius: 20px;
+    margin-top: 17px;
+    margin-right: 15px;
+    transition: visibility 2s, transform 2s; 
+}
+
+.magnify-icon{
+    display: ;
+}
+
+
+.magnify-icon{
+    border: 1px solid black;
+}
+
+.border-none{
+    border: 0px;
+}
+
+.border-none:focus{
+    outline: none;
+}
+
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }

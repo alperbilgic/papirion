@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BookList from '../../BookList/BookList-slider/BookList-slider';
+import BookList from '../../BookList/BookList-single/BookList-single';
 import { connect } from 'react-redux';
 import CardContainer from '../../../containers/CardContainer/CardContainer';
 
@@ -27,7 +27,6 @@ class MyLists extends Component {
             </CardContainer>
         )
     }
-
 }
 
 const mapStateToProps = state => {

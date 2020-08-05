@@ -6,29 +6,31 @@ import BookList from '../../components/BookList/BookList-single/BookList-single'
 const User = (props) => {
 
     const book_link = '/' + 'kitaplar'; //+ props.user.username
-
-    console.log(props.user);
     
     return (
         <ul className='stats'>
             <li className='book-count'>
-                <li>149</li>
+                <li>{props.stats.books}</li>
                 <li>Kitap</li>
             </li>
             <li className='book-count'>
-                <li>7</li>
+                <li>{props.stats.librarySize}</li>
+                <li>Kitaplığında</li>
+            </li>
+            <li className='book-count'>
+                <li>{props.stats.lists}</li>
                 <li>Liste</li>
             </li>
             <li className='book-count'>
-                <li>82</li>
+                <li>{props.stats.reviews}</li>
                 <li>Yorum</li>
             </li>
             <li className='book-count'>
-                <li>36</li>
+                <li>{props.stats.following}</li>
                 <li>Takip</li>
             </li>
             <li className='book-count'>
-                <li>55</li>
+                <li>{props.stats.followers}</li>
                 <li>Takipçi</li>
             </li>
         </ul>

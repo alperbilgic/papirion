@@ -30,13 +30,13 @@ const BookList = (props) => {
                     <div className = "mybooklist-img__src"><img src={BookListImg}/></div>
                 </div>
                 <div className = "mybooklist-text-flex">
-                    <div className = "mybooklist-listname primary-h"> En iyi {props.booklist.name}</div>
+                    <div className = "mybooklist-listname primary-h">{props.booklist.name}</div>
                     <div className = "mybooklist-metadata tiny-text">
-                        <div className = "mybooklist-metadata__films"> 11 kitap </div>
-                        <div className = "mybooklist-metadata__likes"> 43</div>
-                        <div className = "mybooklist-metadata__comments"> 6</div>
+                        <div className = "mybooklist-metadata__films"> {props.booklist.number_of_books}</div>
+                        <div className = "mybooklist-metadata__likes"> like sayısı eklenmeli {props.booklist.number_of_likes}</div>
+                        <div className = "mybooklist-metadata__comments"> {props.booklist.number_of_comments}</div>
                     </div>
-                    <div className = "mybooklist-description primary-p"><p>Kadın erkek ilişkilerinde {script} </p></div>
+                    <div className = "mybooklist-description primary-p"><p>{script}</p></div>
                 </div>
             </div>        
         </div>

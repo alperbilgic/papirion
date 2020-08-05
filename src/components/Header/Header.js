@@ -6,6 +6,7 @@ import Login from '../Login/Login';
 import { Nav, Navbar, NavItem, Container,   } from 'reactstrap';
 import HeaderStyles from './HeaderStyles';
 import AfterLogin from '../Login/AfterLogin/AfterLogin';
+import SearchBox from './Search/Search';
 
 const Header = (props) => {
 
@@ -36,6 +37,7 @@ const Header = (props) => {
                                 <NavLink link="/authors/">Yazarlar</NavLink>
                             </NavItem>
                             <DropDown text='GÖZ AT'/>
+                            <SearchBox/>
                         </div>
                         {isLoggedIn ? <AfterLogin username={props.username}/> : <Login/>}
                     </Nav>
