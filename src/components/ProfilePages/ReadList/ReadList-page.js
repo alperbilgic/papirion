@@ -3,14 +3,15 @@ import AbstractBook from '../../AbstractBook/AbstractBook-single/AbstractBook-si
 import { connect } from 'react-redux';
 import CardContainer from '../../../containers/CardContainer/CardContainer';
 
-class MyFavorites extends Component {
+class ReadList extends Component {
 
     state = {
         books: [],
+        pageuser: this.props.match.params.username,
     }
 
     componentDidUpdate(prevProps) {
-        fetch(`${process.env.REACT_APP_API_URL}/api/users/${this.props.username}/mybooks`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/users/${this.state.pageuser}/readlist`, {
         method: 'GET',
         }).then( resp => resp.json())
         .then( res => {
@@ -36,4 +37,4 @@ const mapStateToProps = state => {
     };
 }
 
-export default connect(mapStateToProps, null)(MyFavorites);
+export default connect(mapStateToProps, null)(ReadList);
