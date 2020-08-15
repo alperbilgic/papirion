@@ -1,8 +1,8 @@
 .grid-container{
   display: grid;
-  width: 300px;
+  width: 500px;
   height: 230px;
-  grid-template-columns: 2;
+  grid-template-columns: 0.3fr 0.7fr;
   grid-template-rows: 0.7fr 0.3fr;
   justify-content: start;
   padding: 5px;
@@ -13,6 +13,7 @@
   margin: 10px;
   position: relative;
   transition: all .4s ease-in-out;
+  text-align: center;
 
 }
 
@@ -85,13 +86,10 @@
   padding-top: 10px;
 }
 
-.line-decorator {
-  width: auto;
+.line-decorator-review {
+  width: 100px;
   height: 1px;
-  margin-top: 3.8%;
   margin-right: 40px;
-  margin-left: 0px;
-  padding-top: 0px;
   padding-right: 15px;
   padding-left: 15px;
   background-color: #c9c9c9;

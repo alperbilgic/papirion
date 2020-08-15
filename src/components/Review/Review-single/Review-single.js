@@ -9,10 +9,10 @@ const Review = (props) => {
     const [script, setScript] = useState('');
     const [_isMounted, setIsMounted] = useState(false);
     useEffect(() => {
-            if (props.review.review.length <= 300) {
+            if (props.review.review.length <= 150) {
                 setScript(props.review.review);
             } else {
-                setScript(props.review.review.slice(0,300) + "...")
+                setScript(props.review.review.slice(0,150) + "...")
             }
             setIsMounted(true);
 
@@ -29,7 +29,7 @@ const Review = (props) => {
                     <div className="review-heading__bookname">
                         <Link to="/abstractbooks/" className="link" style={{textDecoration: 'none', color: 'black', height: '100%'}}>{props.review.abstract_book.name}</Link>
                     </div>
-                    <div className="line-decorator"></div>
+                    <div className="line-decorator-review"></div>
                     <div className="review-heading__user-info">
                         <div className="avatar"><img src={props.review.user.image || EmptyAuthorPic} width="31" alt="" className="avatar"/></div>
                         <Link to="/users/" className="link-2" style={{textDecoration: 'none', color: 'black', height: '100%'}}>{props.review.user.username}</Link>
