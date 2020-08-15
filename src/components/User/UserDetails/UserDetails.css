@@ -56,7 +56,6 @@ ul {
     background-color: ;
     margin-top: 50px;
     justify-content: center;
-    ;
 }
 
 .fields-bar> div{
@@ -72,4 +71,12 @@ ul {
 .fields-bar> div:active{
     background-color: #0CE8B5;
     color: white;
+}
+
+
+Nav.fields-bar{
+    display:flex;
+    background-color: ;
+    margin-top: 50px;
+    justify-content: center;
 }

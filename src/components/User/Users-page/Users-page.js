@@ -27,9 +27,15 @@ class Users extends Component {
 
     render () {
         return (
-            <Container style={{paddingTop: '70px'}}>
-                {this.state.users.map( user => <User user={user}/>)}                
-            </Container>
+            <div>
+                <div className="">
+                    <Container style={{paddingTop: '70px'}}>
+                    {this.state.users.map( user => <User user={user}/>)}
+                    </Container>
+                </div>
+                <div className="">ABCD</div>  
+            </div>  
+            
         )
     }
 

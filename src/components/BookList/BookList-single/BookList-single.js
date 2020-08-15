@@ -10,10 +10,10 @@ const BookList = (props) => {
     const [_isMounted, setIsMounted] = useState(false);
     
     useEffect(() => {
-        if (props.booklist.description <= 300) {
+        if (props.booklist.description <= 50) {
             setScript(props.booklist.description);
         } else {
-            setScript(props.booklist.description.slice(0,300) + "...")
+            setScript(props.booklist.description.slice(0,50) + "...")
         }
     
         setIsMounted(true);
