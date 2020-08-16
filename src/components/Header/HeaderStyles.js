@@ -78,16 +78,6 @@ function HeaderStyles() {
         -ms-flex-pack: justify;
         justify-content: space-between;
       }
-    
-    .line-decorator {
-        width: auto;
-        height: 1px;
-        margin-top: 0%;
-        padding-top: 0px;
-        padding-right: 15px;
-        padding-left: 15px;
-        background-color: #c7c2c2;
-      }
       
       .line-decorator.sub {
         margin-top: 3.8%;

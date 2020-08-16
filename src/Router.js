@@ -2,6 +2,7 @@ import React/*, { Suspense }*/ from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Main from './components/Main/Main';
 import Authors from './components/Author/Author-page/Author-page';
+import AuthorDetails from './components/Author/AuthorDetails/AuthorDetails';
 import AbstractBooks from './components/AbstractBook/AbstractBook-page/AbstractBook-page';
 import AbstractBookDetails from './components/AbstractBook/AbstractBookDetails/AbstractBookDetails';
 import Users from './components/User/Users-page/Users-page';
@@ -19,6 +20,7 @@ function Routes() {
         <Switch fallback="loading...">
             <Route exact path="/" component={Main}/>  
             <Route exact path="/authors/" component={Authors}/>           
+            <Route exact path="/authors/:id" component={AuthorDetails}/>
             <Route exact path="/abstractbooks/" component={AbstractBooks}/>           
             <Route exact path="/abstractbooks/:bookId" component={AbstractBookDetails}/>
             <Route exact path="/users/" component={Users}/>
